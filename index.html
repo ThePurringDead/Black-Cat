@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/f2/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/f2/assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/f2/assets/favicons/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+    <section>
+      <div class="col">
+        <h1>Welcome to Baruk OnAir</h1>
+    </section>
+    <section>
+      <div class="container reveal">
+        <h2>This is a Baruk OnAir app, created as a personal project for fun and testing.</h2>
+        <br>
+        <div class="text-card">
+          <p>It’s for personal use only and not intended for commercial sale. Selling or distributing it may lead to legal issues.</p>
+        </div>
+        <div class="text-card">
+          <br>
+          <p>The app has a simple UI and is updated daily when the owner is free. It compiles channels from various sources.</p>
+        </div>
+        <div class="text-card">
+          <br>
+          <p>Your support helps keep the app going.</p>
+        </div>
+        <p>
+          <br>
+          <center>© 2025 Baruk On Air. All rights reserved.</center>
+        </p>
+      </div>
+      </div>
+    </section>
+    <header>
+      <a href="https://www.youtube.com/watch?v=5QSP51TNTdQ">
+        <img src="/images/baruk.svg" width="130px" height="80px" </img>
+        <div class="menu-btn" </div>
+          <div class="navigation">
+            <div class="navigation-items">
+              <a href="/">Home</a>
+              <a href="/tutorial">Tutorial</a>
+              <a href="/download">Download</a>
+            </div>
+          </div>
+    </header>
+    <script type="text/javascript">
+      window.addEventListener('scroll', reveal);
+
+      function reveal() {
+        var reveals = document.querySelectorAll('.reveal');
+        for (var i = 0; i < reveals.length; i++) {
+          var windowheight = window.innerHeight;
+          var revealtop = reveals[i].getBoundingClientRect().top;
+          var revealpoint = 150;
+          if (revealtop < windowheight - revealpoint) {
+            reveals[i].classList.add('active');
+          } else {
+            reveals[i].classList.remove('active');
+          }
+        }
+      }
+    </script>
+    </div>
+    <div class="slider-navigation">
+      <div class="nav-btn active"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+    </div>
+    </section>
+    <div class="media-icons">
+      <a href="#">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </div>
+    <div class="slider-navigation">
+      <div class="nav-btn active"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+    </div>
+    </section>
+    <script type="text/javascript">
+      //Javacript for responsive navigation menu
+      const menuBtn = document.querySelector(".menu-btn");
+      const navigation = document.querySelector(".navigation");
+      menuBtn.addEventListener("click", () => {
+        menuBtn.classList.toggle("active");
+        navigation.classList.toggle("active");
+      });
+      //Javacript for video slider navigation
+      const btns = document.querySelectorAll(".nav-btn");
+      const slides = document.querySelectorAll(".video-slide");
+      const contents = document.querySelectorAll(".content");
+      var sliderNav = function(manual) {
+        btns.forEach((btn) => {
+          btn.classList.remove("active");
+        });
+        slides.forEach((slide) => {
+          slide.classList.remove("active");
+        });
+        contents.forEach((content) => {
+          content.classList.remove("active");
+        });
+        btns[manual].classList.add("active");
+        slides[manual].classList.add("active");
+        contents[manual].classList.add("active");
+      }
+      btns.forEach((btn, i) => {
+        btn.addEventListener("click", () => {
+          sliderNav(i);
+        });
+      });
+    </script>
+  </body>
+</html>
