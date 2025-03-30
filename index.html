@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baruk OnAir</title>
@@ -8,141 +8,57 @@
     <link rel="shortcut icon" href="//i.ibb.co/4ggH8kNK/baruk.png">
     <link rel="icon" type="image/png" href="//i.ibb.co/4ggH8kNK/baruk.png" sizes="192x192">
     <link rel="apple-touch-icon" href="//i.ibb.co/4ggH8kNK/baruk.png" sizes="180x180">
-    <link rel="manifest" href="https://raw.githubusercontent.com/ThePurringDead/Black-Cat/refs/heads/main/f2/assets/favicons/site.webmanifest">
+    <link rel="manifest" href="https://raw.githubusercontent.com/ThePurringDead/Black-Cat/main/f2/assets/favicons/site.webmanifest">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
-  </head>
-  <body>
+</head>
+<body>
     <section>
-      <div class="col">
         <h1>Welcome to Baruk OnAir</h1>
     </section>
     <section>
-      <div class="container reveal">
-        <h2>This is a Baruk OnAir app, created as a personal project for fun and testing.</h2>
-        <br>
-        <div class="text-card">
-          <p>It’s for personal use only and not intended for commercial sale. Selling or distributing it may lead to legal issues.</p>
+        <div class="container reveal">
+            <h2>This is a Baruk OnAir app, created as a personal project for fun and testing.</h2>
+            <div class="text-card">
+                <p>It’s for personal use only and not intended for commercial sale. Selling or distributing it may lead to legal issues.</p>
+            </div>
+            <div class="text-card">
+                <p>The app has a simple UI and is updated daily when the owner is free. It compiles channels from various sources.</p>
+            </div>
+            <div class="text-card">
+                <p>Your support helps keep the app going.</p>
+            </div>
+            <p>© 2025 Baruk On Air. All rights reserved.</p>
         </div>
-        <div class="text-card">
-          <br>
-          <p>The app has a simple UI and is updated daily when the owner is free. It compiles channels from various sources.</p>
-        </div>
-        <div class="text-card">
-          <br>
-          <p>Your support helps keep the app going.</p>
-        </div>
-        <p>
-          <br>
-          <center>© 2025 Baruk On Air. All rights reserved.</center>
-        </p>
-      </div>
-      </div>
     </section>
     <header>
-      <a href="https://www.youtube.com/watch?v=5QSP51TNTdQ">
-        <img src="https://raw.githubusercontent.com/ThePurringDead/Black-Cat/main/images/baruk.svg" width="130px" height="80px" <div class="menu-btn" </div>
-        <div class="navigation">
-          <div class="navigation-items">
+        <a href="https://www.youtube.com/watch?v=5QSP51TNTdQ">
+            <img src="https://raw.githubusercontent.com/ThePurringDead/Black-Cat/main/images/baruk.svg" width="130" height="80">
+        </a>
+        <nav class="navigation">
             <a href="/">Home</a>
             <a href="/tutorial">Tutorial</a>
             <a href="/download">Download</a>
-          </div>
-        </div>
+        </nav>
     </header>
-    <div class="footer">
-      <ul>
-        <li class="with-icon">
-          <a href="url">
-            <span class="btn-icon icon-code"></span> Join Me </a>
-        </li>
-        <li class="with-icon">
-          <a href="url">
-            <span class="btn-icon icon-gear"></span> Buy Me A Coffee </a>
-        </li>
-        <li class="with-icon">
-          <a href="url">
-            <span class="btn-icon icon-at"></span> Donate </a>
-        </li>
-      </ul>
-      <p> By using Baruk OnAir, you agree to comply with our <a href="https://imgbb.com/tos" target="_blank">Terms of Service</a> and <a href="https://imgbb.com/privacy" target="_blank">Privacy Policy</a>. </p>
-    </div>
-    <script type="text/javascript">
-      window.addEventListener('scroll', reveal);
-
-      function reveal() {
-        var reveals = document.querySelectorAll('.reveal');
-        for (var i = 0; i < reveals.length; i++) {
-          var windowheight = window.innerHeight;
-          var revealtop = reveals[i].getBoundingClientRect().top;
-          var revealpoint = 150;
-          if (revealtop < windowheight - revealpoint) {
-            reveals[i].classList.add('active');
-          } else {
-            reveals[i].classList.remove('active');
-          }
-        }
-      }
+    <footer class="footer">
+        <ul>
+            <li><a href="url">Join Me</a></li>
+            <li><a href="url">Buy Me A Coffee</a></li>
+            <li><a href="url">Donate</a></li>
+        </ul>
+        <p>By using Baruk OnAir, you agree to comply with our <a href="https://imgbb.com/tos" target="_blank">Terms of Service</a> and <a href="https://imgbb.com/privacy" target="_blank">Privacy Policy</a>.</p>
+    </footer>
+    <script>
+        window.addEventListener('scroll', function() {
+            document.querySelectorAll('.reveal').forEach(el => {
+                if (el.getBoundingClientRect().top < window.innerHeight - 150) {
+                    el.classList.add('active');
+                } else {
+                    el.classList.remove('active');
+                }
+            });
+        });
     </script>
-    </div>
-    <div class="slider-navigation">
-      <div class="nav-btn active"></div>
-      <div class="nav-btn"></div>
-      <div class="nav-btn"></div>
-      <div class="nav-btn"></div>
-      <div class="nav-btn"></div>
-    </div>
-    </section>
-    <div class="media-icons">
-      <a href="#">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="#">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="#">
-        <i class="fab fa-twitter"></i>
-      </a>
-    </div>
-    <div class="slider-navigation">
-      <div class="nav-btn active"></div>
-      <div class="nav-btn"></div>
-      <div class="nav-btn"></div>
-      <div class="nav-btn"></div>
-      <div class="nav-btn"></div>
-    </div>
-    </section>
-    <script type="text/javascript">
-      //Javacript for responsive navigation menu
-      const menuBtn = document.querySelector(".menu-btn");
-      const navigation = document.querySelector(".navigation");
-      menuBtn.addEventListener("click", () => {
-        menuBtn.classList.toggle("active");
-        navigation.classList.toggle("active");
-      });
-      //Javacript for video slider navigation
-      const btns = document.querySelectorAll(".nav-btn");
-      const slides = document.querySelectorAll(".video-slide");
-      const contents = document.querySelectorAll(".content");
-      var sliderNav = function(manual) {
-        btns.forEach((btn) => {
-          btn.classList.remove("active");
-        });
-        slides.forEach((slide) => {
-          slide.classList.remove("active");
-        });
-        contents.forEach((content) => {
-          content.classList.remove("active");
-        });
-        btns[manual].classList.add("active");
-        slides[manual].classList.add("active");
-        contents[manual].classList.add("active");
-      }
-      btns.forEach((btn, i) => {
-        btn.addEventListener("click", () => {
-          sliderNav(i);
-        });
-      });
-    </script>
-  </body>
+</body>
 </html>
