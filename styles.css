@@ -8,7 +8,7 @@
 }
 
 body {
-    background: linear-gradient(20deg, #000000, #1d1c1cfb);
+    background: linear-gradient(20deg, #000000, #000000);
 }
 
 section {
@@ -51,7 +51,7 @@ section .cards {
 }
 
 section .cards .text-card {
-    background: #0091ff;
+    background: #fc0101;
     margin: 20px;
     padding: 20px;
 }
@@ -98,7 +98,7 @@ header {
 }
 
 header .brand {
-    color: #0a07f1;
+    color: #000000;
     font-size: 1.5em;
     font-weight: 700;
     text-transform: uppercase;
