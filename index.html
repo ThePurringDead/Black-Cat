@@ -19,7 +19,7 @@
     </section>
     <section>
       <div class="container reveal">
-        <h2>This is a Baruk OnAir app, created as a personal project for fun and testing.</h2>
+        <h2>This is a Baruk On Air app, created as a personal project for fun and testing.</h2>
         <br>
         <div class="text-card">
           <p>It’s for personal use only and not intended for commercial sale. Selling or distributing it may lead to legal issues.</p>
@@ -52,55 +52,48 @@
     </header>
     </section>
     <section>
-    <div class="footer">
-  <ul>
-    <li class="with-icon">
-      <a href="url">
-        <span class="btn-icon icon-code"></span> Join Me
-      </a>
-    </li>
-    <li class="with-icon">
-      <a href="url">
-        <span class="btn-icon icon-gear"></span> Buy Me A Coffee
-      </a>
-    </li>
-    <li class="with-icon">
-      <a href="url">
-        <span class="btn-icon icon-at"></span> Donate
-      </a>
-    </li>
-  </ul>
-  <p>
-    By using Baruk OnAir, you agree to comply with our
-    <a href="https://imgbb.com/tos" target="_blank">Terms of Service</a> and
-    <a href="https://imgbb.com/privacy" target="_blank">Privacy Policy</a>.
-  </p>
-</div>
-    <script type="text/javascript">
-      window.addEventListener('scroll', reveal);
+      <div class="footer">
+        <ul>
+          <li class="with-icon">
+            <a href="url">
+              <span class="btn-icon icon-code"></span> Join Me </a>
+          </li>
+          <li class="with-icon">
+            <a href="url">
+              <span class="btn-icon icon-gear"></span> Buy Me A Coffee </a>
+          </li>
+          <li class="with-icon">
+            <a href="url">
+              <span class="btn-icon icon-at"></span> Donate </a>
+          </li>
+        </ul>
+        <p> By using Baruk OnAir, you agree to comply with our <a href="https://imgbb.com/tos" target="_blank">Terms of Service</a> and <a href="https://imgbb.com/privacy" target="_blank">Privacy Policy</a>. </p>
+      </div>
+      <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
 
-      function reveal() {
-        var reveals = document.querySelectorAll('.reveal');
-        for (var i = 0; i < reveals.length; i++) {
-          var windowheight = window.innerHeight;
-          var revealtop = reveals[i].getBoundingClientRect().top;
-          var revealpoint = 150;
-          if (revealtop < windowheight - revealpoint) {
-            reveals[i].classList.add('active');
-          } else {
-            reveals[i].classList.remove('active');
+        function reveal() {
+          var reveals = document.querySelectorAll('.reveal');
+          for (var i = 0; i < reveals.length; i++) {
+            var windowheight = window.innerHeight;
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 150;
+            if (revealtop < windowheight - revealpoint) {
+              reveals[i].classList.add('active');
+            } else {
+              reveals[i].classList.remove('active');
+            }
           }
         }
-      }
-    </script>
-    </div>
-    <div class="slider-navigation">
-      <div class="nav-btn active"></div>
-      <div class="nav-btn"></div>
-      <div class="nav-btn"></div>
-      <div class="nav-btn"></div>
-      <div class="nav-btn"></div>
-    </div>
+      </script>
+      </div>
+      <div class="slider-navigation">
+        <div class="nav-btn active"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+      </div>
     </section>
     <div class="media-icons">
       <a href="#">
@@ -126,31 +119,9 @@
       const menuBtn = document.querySelector(".menu-btn");
       const navigation = document.querySelector(".navigation");
       menuBtn.addEventListener("click", () => {
-        menuBtn.classList.toggle("active");
-        navigation.classList.toggle("active");
+      menuBtn.classList.toggle("active");
+      navigation.classList.toggle("active");
       });
-      //Javacript for video slider navigation
-      const btns = document.querySelectorAll(".nav-btn");
-      const slides = document.querySelectorAll(".video-slide");
-      const contents = document.querySelectorAll(".content");
-      var sliderNav = function(manual) {
-        btns.forEach((btn) => {
-          btn.classList.remove("active");
-        });
-        slides.forEach((slide) => {
-          slide.classList.remove("active");
-        });
-        contents.forEach((content) => {
-          content.classList.remove("active");
-        });
-        btns[manual].classList.add("active");
-        slides[manual].classList.add("active");
-        contents[manual].classList.add("active");
-      }
-      btns.forEach((btn, i) => {
-        btn.addEventListener("click", () => {
-          sliderNav(i);
-        });
       });
     </script>
   </body>
