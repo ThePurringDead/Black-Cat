@@ -72,7 +72,9 @@
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
       }
 
-      h1, h2, h4 {
+      h1,
+      h2,
+      h4 {
         color: white;
         text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
       }
@@ -94,91 +96,87 @@
         box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
         font-weight: bold;
         font-size: 1.2em;
-      }
 
-      .buttons {
-        margin: 20px;
-        text-align: center;
-      }
+        .buttons {
+          display: flex;
+          justify-content: center;
+          gap: 15px;
+          /* Space between buttons */
+          margin: 30px 0;
+        }
 
-      .button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: #007bff;
-        color: white;
-        padding: 20px 40px;
-        border: none;
-        cursor: pointer;
-        font-size: 1.5em;
-        font-weight: bold;
-        margin: 10px;
-        border-radius: 50px;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-        transition: all 0.3s ease-in-out;
-        text-decoration: none;
-        width: 300px;
-      }
-
-      .button svg {
-        margin-right: 10px;
-        width: 30px;
-        height: 30px;
-        fill: white;
-      }
-
-      .button:hover {
-        background: #ff4b2b;
-        transform: scale(1.05);
-      }
-
-      .footer {
-        width: 100%;
-        text-align: center;
-        padding: 15px;
-        background: black;
-        color: white;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-      }
-
-      @media (max-width: 600px) {
-        .hero {
-          flex-direction: column;
+        .button {
+          display: flex;
           align-items: center;
-          text-align: center;
+          justify-content: center;
+          background: linear-gradient(180deg, #007bff, #0056b3);
+          color: black;
+          padding: 18px 40px;
+          border: none;
+          cursor: pointer;
+          font-size: 1.5em;
+          font-weight: bold;
+          border-radius: 5px;
+          /* Rounded 5px */
+          box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+          transition: all 0.3s ease-in-out;
+          text-decoration: none;
+          width: 250px;
         }
 
-        .hero img {
-          max-width: 80%;
-          margin-top: 20px;
+        .button svg {
+          margin-right: 10px;
+          width: 30px;
+          height: 30px;
+          fill: black;
         }
-      }
+
+        .button:hover {
+          background: linear-gradient(180deg, #ff4b2b, #c23400);
+          transform: translateY(3px);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .footer {
+          width: 100%;
+          text-align: center;
+          padding: 15px;
+          background: black;
+          color: white;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+
+        @media (max-width: 600px) {
+          .hero {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+          }
+
+          .hero img {
+            max-width: 80%;
+            margin-top: 20px;
+          }
+        }
     </style>
   </head>
   <body>
     <div class="navbar">
-      <img src="img/Home.svg" alt="Home Icon">
-      Baruk On Air
+      <img src="img/Home.svg" alt="Home Icon"> Baruk On Air
     </div>
     <div class="hero">
       <div class="hero-text">Welcome to Baruk On Air</div>
       <img src="img/mock.png" alt="Mockup Image">
     </div>
     <h2>This is a Baruk On Air app, created as a personal project for fun and testing.</h2>
-    <h4>
-      It’s for personal use only and not intended for commercial sale.<br>
-      Selling or distributing it may lead to legal issues.<br>
-      The app has a simple UI and is updated daily when the owner is free.<br>
-      It compiles channels from various sources.<br>
-      Your support helps keep the app going.
-    </h4>
+    <h4> It’s for personal use only and not intended for commercial sale. <br> Selling or distributing it may lead to legal issues. <br> The app has a simple UI and is updated daily when the owner is free. <br> It compiles channels from various sources. <br> Your support helps keep the app going. </h4>
     <div class="buttons">
       <a href="your-download-link-here" class="button">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 16l4-5h-3V4h-2v7H8l4 5zm-6 3h12v2H6v-2z"/></svg>
-        Download
-      </a>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M12 16l4-5h-3V4h-2v7H8l4 5zm-6 3h12v2H6v-2z" />
+        </svg> Download </a>
     </div>
     <h2>Features</h2>
     <div class="grid-container">
