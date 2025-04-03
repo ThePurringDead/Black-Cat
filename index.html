@@ -20,10 +20,11 @@
         flex-direction: column;
         align-items: center;
         background: url('img/main.jpg') center/cover no-repeat;
-        color: yellow;
+        color: white;
         min-height: 100vh;
         position: relative;
         padding-bottom: 60px;
+        text-align: center;
       }
 
       .navbar {
@@ -42,8 +43,8 @@
       .navbar img {
         position: absolute;
         left: 15px;
-        width: 40px;
-        height: 40px;
+        width: 60px;
+        height: 60px;
       }
 
       .hero {
@@ -54,13 +55,14 @@
         align-items: center;
         justify-content: space-between;
         color: red;
-        font-size: 2em;
+        font-size: 2.5em;
         text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
         padding: 0 10%;
       }
 
       .hero-text {
         flex: 1;
+        font-size: 2em;
       }
 
       .hero img {
@@ -70,10 +72,9 @@
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
       }
 
-      h1 {
-        font-family: 'Source Code Pro', monospace;
-        color: red;
-        text-align: center;
+      h1, h2, h4 {
+        color: white;
+        text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
       }
 
       .grid-container {
@@ -85,12 +86,14 @@
       }
 
       .grid-item {
-        background: yellow;
+        background: linear-gradient(to right, #ffcc00, #ff9900);
         color: black;
         padding: 20px;
         text-align: center;
-        border-radius: 8px;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+        font-weight: bold;
+        font-size: 1.2em;
       }
 
       .buttons {
@@ -99,30 +102,45 @@
       }
 
       .button {
-        background: rgb(38, 0, 255);
-        color: black;
-        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #007bff;
+        color: white;
+        padding: 20px 40px;
         border: none;
         cursor: pointer;
-        font-size: 1em;
+        font-size: 1.5em;
         font-weight: bold;
         margin: 10px;
-        border-radius: 5px;
+        border-radius: 50px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease-in-out;
+        text-decoration: none;
+        width: 300px;
+      }
+
+      .button svg {
+        margin-right: 10px;
+        width: 30px;
+        height: 30px;
+        fill: white;
       }
 
       .button:hover {
-        background: red;
-        color: rgb(251, 255, 0);
+        background: #ff4b2b;
+        transform: scale(1.05);
       }
 
       .footer {
         width: 100%;
         text-align: center;
         padding: 15px;
-        background: yellow;
-        color: black;
-        position: relative;
-        margin-top: 20px;
+        background: black;
+        color: white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
       }
 
       @media (max-width: 600px) {
@@ -157,7 +175,10 @@
       Your support helps keep the app going.
     </h4>
     <div class="buttons">
-      <button class="button">Download</button>
+      <a href="your-download-link-here" class="button">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 16l4-5h-3V4h-2v7H8l4 5zm-6 3h12v2H6v-2z"/></svg>
+        Download
+      </a>
     </div>
     <h2>Features</h2>
     <div class="grid-container">
