@@ -102,6 +102,25 @@
         transform: translateY(3px);
       }
 
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        width: 80%;
+        margin: 40px 0;
+      }
+
+      .grid-item {
+        background: linear-gradient(to right, #ffcc00, #ff9900);
+        color: black;
+        padding: 20px;
+        text-align: center;
+        border-radius: 12px;
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+
       .footer {
         width: 100%;
         text-align: center;
@@ -111,6 +130,11 @@
         position: absolute;
         bottom: 0;
         left: 0;
+      }
+
+      .purple-text {
+        color: purple;
+        text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
       }
     </style>
   </head>
@@ -122,8 +146,12 @@
       <div class="hero-text">Welcome to Baruk On Air</div>
       <img src="img/mock.png" alt="Mockup Image">
     </div>
-    <h2>This is a Baruk On Air app, created as a personal project for fun and testing.</h2>
-    <h4> It’s for personal use only and not intended for commercial sale. Selling or distributing it may lead to legal issues.</h4>
+    <h2 class="purple-text">This is a Baruk On Air app, created as a personal project for fun and testing.</h2>
+    <h4 class="purple-text"> It’s for personal use only and not intended for commercial sale.<br>
+      Selling or distributing it may lead to legal issues.<br>
+      The app has a simple UI and is updated daily when the owner is free.<br>
+      It compiles channels from various sources.<br>
+      Your support helps keep the app going. </h4>
     <div class="buttons">
       <a href="your-download-link-here" class="button">Download</a>
       <a href="your-join-link-here" class="button">Join Me</a>
