@@ -18,7 +18,7 @@ https://d25tgymtnqzu8s.cloudfront.net/smil:sukan/manifest.mpd
 #EXTINF:-1 tvg-id="" tvg-name="" group-title="Baruk On Air | RTM KLIK" tvg-logo="https://rtm-images.glueapi.io/320x0/live_channel/SALURAN_1920x1080px_TV6.jpg",TV6
 https://d25tgymtnqzu8s.cloudfront.net/smil:tv6/manifest.mpd
 
-#EXTINF:-1 tvg-id="" tvg-name="" group-title="Baruk On Air | RTM KLIK" tvg-logo="https://i.postimg.cc/DZMhf0KJ/IMG-20240225-224221-479-picsay-7.jpg",Berita RTM
+#EXTINF:-1 tvg-id="" tvg-name="" group-title="Baruk On Air | RTM KLIK" tvg-logo="https://rtm-images.glueapi.io/320x0/live_channel/5.png",Berita RTM
 https://d25tgymtnqzu8s.cloudfront.net/smil:berita/manifest.mpd 
 
 #EXTINF:-1 tvg-id="" tvg-name="" group-title="Baruk On Air | RTM KLIK" tvg-logo="https://rtm-images.glueapi.io/320x0/live_channel/SALURAN_1920x1080px_TVOKEY.jpg",OKEY
